@@ -12,7 +12,7 @@ dotenv.config()
 const PORT = process.env.PORT
 const MONGODB_URI = process.env.MONGODB_URI
 const corsOptions = {
-    origin: "http://localhost:8080"
+    origin: "https://ryanfanelli.dev"
 };
 // Middleware
 app.use(cors(corsOptions));
