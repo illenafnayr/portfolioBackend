@@ -23,6 +23,10 @@ app.use(express.static('public'))
 // const Controller = require('./controllers/_controller.js')
 // app.use('/', Controller)
 
+app.get('/', (req, res)=>{
+  res.send('welcome my friend, nothing for you to see here')
+})
+
 app.post('/', (req, res) => {
     Email.create(req.body, (err, data)=>{
         res.json(data)
