@@ -6,6 +6,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
+@Data // defines getters and setters
+@NoArgsConstructor
+@AllArgsConstructor
 class User {
 
     private @Id @GeneratedValue Long id;
